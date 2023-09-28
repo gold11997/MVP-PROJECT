@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Blog</h1>
+      <nav class="navbar">
+        <!-- Navigation links -->
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="blog-container">
+      <!-- Blog posts will be dynamically loaded here -->
+      <article class="blog-post">
+        <h2>
+          Demystifying the Journey of "google.com" in Your Browser: A Deep Dive
+          into Internet Infrastructure
+        </h2>
+        <!-- Display the number of likes -->
+        <p class="post-meta">
+          Posted by <span class="author">Abraham Benson</span> on
+          <span class="date">September 15, 2023</span> |
+          <span class="likes">0 Likes</span>
+        </p>
+        <br />
+        <h4>
+          What happens when you type google.com in your browser and press Enter
+        </h4>
+        <p>
+          Have you ever wondered what happens behind the scenes when you type
+          "google.com" in your browser and hit Enter? The seemingly simple
+          action triggers a complex series of interactions involving various
+          components of the internet infrastructure. In this article, we will
+          take a closer look at each step of the journey, emphasizing the core
+          areas of DNS, TCP/IP, firewalls, HTTPS/SSL, load-balancers, web
+          servers, application servers, and databases. Let's dive in!
+
+          <span class="full-content hidden"></span>
+          <div>
+            <img src="/image/google.jpg">
+        </p>
+        <div>
+          <h4>DNS (Domain Name System)</h4>
+          <p>As you enter "google.com" in your browser, the first key player in the process is the Domain Name System (DNS). Your computer sends a DNS request to a DNS resolver, asking for the IP address associated with "google.com." The resolver navigates through a hierarchy of DNS servers to obtain the IP address. Here's a simplified breakdown:
+          </p>
+          <ul>
+            <li>Your computer queries a local DNS resolver (usually provided by your ISP or configured manually).
+            </li>
+            <li>The resolver checks its cache. If it doesn't have the IP address, it sends a request to the root DNS server.
+            </li>
+            <li>The root server directs the resolver to the appropriate top-level domain (TLD) server responsible for ".com" domains.
+            </li>
+            <li>The TLD server, in turn, points the resolver to the authoritative DNS server responsible for "google.com."</li>
+            <li>The authoritative server provides the IP address back to the resolver, which then caches it for future use.
+            </li>
+          </ul>
+          <div>
+            <img src="/image/dns.jpg">
+          </div>
+        </div>
+        <div>
+          <h4>TCP/IP (Transmission Control Protocol/Internet Protocol)</h4>
+          <p>Once the browser has obtained the IP address of "google.com" from the DNS resolution, 
+            it proceeds with establishing a connection using TCP/IP. TCP breaks the data into packets, while IP handles routing and addressing. The browser initiates a TCP connection with the web server at the IP address obtained.
+          </p>
+          <div>
+            <img src="/image/tcp.jpg">
+          </div>
+
+          <div>
+            <h4>Firewall</h4>
+            <p>In the journey to "google.com," firewalls act as security gatekeepers. 
+              They monitor and filter network traffic to protect against unauthorized 
+              access and potential threats. When the browser sends a request to the web server, 
+              it passes through firewalls that examine the request for any potential security 
+              risks before allowing it to proceed.
+            </p>
+            <div>
+              <img src="/image/firewall.jpg">
+            </div>
+          </div>
+          <div>
+            <h4>HTTPS/SSL (Hypertext Transfer Protocol Secure/Secure Sockets Layer)</h4>
+            <p>To ensure secure communication, websites like Google utilize HTTPS/SSL 
+              encryption. As the connection is established between your browser and the 
+              web server, the server presents a digital certificate verifying its identity. 
+              Your browser checks the certificate's authenticity and initiates an SSL handshake 
+              to establish an encrypted connection. This encryption protects your data from 
+              interception and maintains privacy.
+            </p>
+          </div>
+          <div>
+            <img src="/image/https.jpg">
+          </div>
+          <div>
+            <h4>Load Balancer</h4>
+            <p>Google, being a highly trafficked website, employs load-balancers to distribute
+               incoming requests across multiple servers. Load-balancers help optimize performance, 
+               ensure high availability, and prevent any single server from being overwhelmed. When 
+               you visit "google.com," the load-balancer routes your request to an available web 
+               server to handle the incoming traffic.
+            </p>
+            <div>
+              <img src="image/loadbalancer.jpg">
+            </div>
+            
+            </div>
+            <div>
+              <h4>Web Server</h4>
+              <p>Once the request reaches a web server, it processes the request and generates 
+                the appropriate response. The web server retrieves the requested web page and 
+                sends it back to your browser over the established connection. Google employs 
+                robust web servers capable of handling millions of simultaneous requests efficiently.
+              </p>
+          </div>
+          <div>
+            <img src="image/webserver.jpg">
+          </div>
+
+          <div>
+            <h4>Application Server</h4>
+            <p>In more complex web applications, an application server comes into play. It processes 
+              dynamic content, executes server-side code, and interacts with databases. For example, 
+              Google's search functionality involves an application server that handles the search request, 
+              processes the query, and retrieves relevant results.
+            </p>
+        </div>
+        <div>
+          <img src="image/application_server.jpg">
+        </div>
+
+        <div>
+          <h4>Database</h4>
+          <p>Behind the scenes, a database stores and manages the vast amount of information needed to power 
+            websites like Google. When you search for something, the application server queries the database 
+            to retrieve relevant results. Databases play a crucial
+          </p>
+      </div>
+      <div>
+        <img src="image/database.jpg">
+      </div>
+        </div>
+        
+        <!-- Add a Read More" link -->
+        <a class="read-more" href="#">Read More</a>
+        <!-- Add a like button -->
+        <button class="like-button" data-post-id="1">Like</button>
+      </article>
+
+      <article class="blog-post">
+        <h2>Blog Post Title 1</h2>
+        <!-- Display the number of likes -->
+        <p class="post-meta">
+          Posted by <span class="author">Abraham Benson</span> on
+          <span class="date">September 15, 2023</span> |
+          <span class="likes">0 Likes</span>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+          velit eius dignissimos.
+          <span class="full-content hidden"> Lorem ipsum dolor sit amet. </span>
+        </p>
+        <!-- Add a Read More" link -->
+        <a class="read-more" href="#">Read More</a>
+        <!-- Add a like button -->
+        <button class="like-button" data-post-id="1">Like</button>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Abraham Benson Sunday</p>
+    </footer>
+    <script src="blog.js"></script>
+  </body>
+</html>

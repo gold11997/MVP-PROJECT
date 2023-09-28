@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Skills</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="skills-section">
+      <h2>Core Competencies</h2>
+      <div class="skill-group">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>
+            <div class="skill">
+              <div class="skill-title">Python</div>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 60%">60%</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="skill">
+              <div class="skill-title">HTML</div>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 90%">90%</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="skill">
+              <div class="skill-title">CSS</div>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 90%">90%</div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="skill">
+              <div class="skill-title">JavaScript</div>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 40%">40%</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Design Skills</h3>
+        <ul>
+          <li>
+            <div class="skill">
+              <div class="skill-title">UI/UX Design</div>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 80%">80%</div>
+              </div>
+              <div class="skill-description">
+                Professional expertise in UI/UX design with a focus on creating
+                intuitive and visually appealing user experiences.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Data Science</h3>
+        <ul>
+          <li>
+            <div class="skill">
+              <div class="skill-title">Data Analysis</div>
+              <div class="skill-progress">
+                <div class="progress-bar" style="width: 70%">70%</div>
+              </div>
+              <div class="skill-description">
+                Proficient in data analysis using NoSQL, MySQL, and Redis, with
+                experience in extracting insights from complex datasets.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <a href="index.html" class="back-link">Back to Home</a>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector(".navbar ul");
+
+        menuToggle.addEventListener("click", function () {
+          navbar.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>
